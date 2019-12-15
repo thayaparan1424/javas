@@ -5,15 +5,15 @@
     <title></title>
   </head>
   <body>
-    <p id="one"></p>
-    <p id="two"></p>
-    <p id="three"></p>
-    <p id="four"></p>
-    <button type="button"onclick="button()">Just click here to see the magic :)</button>
+    <h1 id="Blue"></h1>
+    <h1 id="Red"></h1>
+    <h1 id="Green"></h1>
+    <h1 id="Color"></h1>
+    <button type="button"onclick="button()">Click Me</button>
     <script type="text/javascript">
-      function colorCode(num) {
+      function color(num) {
         if (num<0 || num>30) {
-          return "It is not a correct colour option.";
+          return "No color";
         } else if (num<10) {
           return "blue";
         } else if (num<20) {
@@ -23,14 +23,14 @@
         }
       }
       function button() {
-        console.log(colorCode(0));
-        document.getElementById("one").innerHTML="The Color code for 0 is :"+colorCode(0);
-        console.log(colorCode(30));
-        document.getElementById("two").innerHTML="The Color code for 30 is :"+colorCode(30);
-        console.log(colorCode(221));
-        document.getElementById("three").innerHTML="The Color code for 221 is :"+colorCode(221);
-        console.log(colorCode(15));
-        document.getElementById("four").innerHTML="The Color code for 15 is :"+colorCode(15);
+        console.log(color(7));
+        document.getElementById("Blue").innerHTML="Number 7 color is :"+color(7);
+        console.log(color(14));
+        document.getElementById("Red").innerHTML="Number 14 color is :"+color(14);
+        console.log(color(24));
+        document.getElementById("Green").innerHTML="Number 24 color is :"+color(24);
+        console.log(color(1424));
+        document.getElementById("Color").innerHTML="Number 1424 color is :"+color(1424);
       }
     </script>
   </body>

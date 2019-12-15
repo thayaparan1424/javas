@@ -5,23 +5,23 @@
     <title></title>
   </head>
   <body>
-<p id="demo"></p>
-<p id="demo1"></p>
+<p>Long number 1 :<span id="thaya"></span> </p>
+<p>Long number 2 :<span id="inthu"></span> </p>
 
 
     <script type="text/javascript">
-    var x,y;
-      function greaterNum(x, y) {
-        if (x<y) {
-          return y;
+    var t,i;
+      function greaterNum(t, i) {
+        if (t<i) {
+          return i;
         }else {
-        return x;
+        return t;
       }
     }
-    console.log(greaterNum(8,10));
-    document.getElementById("demo").innerHTML=greaterNum(8, 10);
-    document.getElementById("demo1").innerHTML=greaterNum(25, 10);
-    console.log(greaterNum(8,32));
+    console.log(greaterNum(24,14));
+    document.getElementById("thaya").innerHTML=greaterNum(14, 07);
+    document.getElementById("inthu").innerHTML=greaterNum(24, 07);
+    console.log(greaterNum(14,03));
     </script>
   </body>
 </html>
